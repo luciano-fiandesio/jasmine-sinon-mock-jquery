@@ -7,26 +7,29 @@
   <!-- jQuery rest -->
   <script src="libs/jquery.rest.js"></script>
 
-  <script src="libs/global.js"></script>
+  <script src="src/global.js"></script>
 
-  <script src="libs/module.js"></script>
+  <script src="src/module.js"></script>
 
 
 
 </head>
 <body>
 
+  
+
+  <h1>jQuery Rest</h1>
+
   <script >
     $(document).ready(function() {
       
-      var x = module.getData();
+      module.getData(function(data) {
+        console.log(data);
+      });
 
     });
 
   </script>
-
-  jQuery Rest
-
 </body>
 </html>
 
